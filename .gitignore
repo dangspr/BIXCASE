@@ -1,0 +1,12 @@
+# Arquivos
+.env
+
+# Diretorios
+log/*
+
+
+
+# Qualquer coisa
+*.log
+
+

@@ -1,0 +1,280 @@
+[2024-03-05T22:02:51.321+0000] {processor.py:161} INFO - Started process (PID=4606) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:02:51.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:02:51.323+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:02:51.322+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:02:51.348+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:02:51.344+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:02:51.350+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:02:51.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.048 seconds
+[2024-03-05T22:03:22.314+0000] {processor.py:161} INFO - Started process (PID=4665) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:03:22.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:03:22.315+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:03:22.315+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:03:22.333+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:03:22.329+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:03:22.335+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:03:22.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.044 seconds
+[2024-03-05T22:03:52.943+0000] {processor.py:161} INFO - Started process (PID=4724) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:03:52.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:03:52.946+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:03:52.945+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:03:52.962+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:03:52.959+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:03:52.964+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:03:52.979+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.038 seconds
+[2024-03-05T22:04:23.526+0000] {processor.py:161} INFO - Started process (PID=4780) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:04:23.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:04:23.528+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:04:23.528+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:04:23.546+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:04:23.542+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:04:23.548+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:04:23.563+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.039 seconds
+[2024-03-05T22:04:53.668+0000] {processor.py:161} INFO - Started process (PID=4839) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:04:53.668+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:04:53.669+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:04:53.669+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:04:53.686+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:04:53.682+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:04:53.688+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:04:53.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.040 seconds
+[2024-03-05T22:05:24.128+0000] {processor.py:161} INFO - Started process (PID=4898) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:05:24.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:05:24.130+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:05:24.129+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:05:24.149+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:05:24.145+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:05:24.150+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:05:24.165+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.039 seconds
+[2024-03-05T22:05:54.404+0000] {processor.py:161} INFO - Started process (PID=4954) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:05:54.405+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:05:54.406+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:05:54.406+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:05:54.424+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:05:54.420+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:05:54.425+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:05:54.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.040 seconds
+[2024-03-05T22:06:24.492+0000] {processor.py:161} INFO - Started process (PID=5013) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:06:24.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:06:24.494+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:06:24.493+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:06:24.512+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:06:24.508+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:06:24.514+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:06:24.531+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.042 seconds
+[2024-03-05T22:06:54.573+0000] {processor.py:161} INFO - Started process (PID=5069) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:06:54.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:06:54.575+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:06:54.575+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:06:54.593+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:06:54.589+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:06:54.594+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:06:54.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.041 seconds
+[2024-03-05T22:07:24.829+0000] {processor.py:161} INFO - Started process (PID=5128) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:07:24.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:07:24.831+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:07:24.831+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:07:24.850+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:07:24.846+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:07:24.852+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:07:24.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.041 seconds
+[2024-03-05T22:07:55.701+0000] {processor.py:161} INFO - Started process (PID=5187) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:07:55.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:07:55.703+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:07:55.703+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:07:55.720+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:07:55.717+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:07:55.723+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:07:55.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.040 seconds
+[2024-03-05T22:08:26.401+0000] {processor.py:161} INFO - Started process (PID=5243) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:08:26.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:08:26.403+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:08:26.403+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:08:26.419+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:08:26.415+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:08:26.421+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:08:26.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.038 seconds
+[2024-03-05T22:08:56.959+0000] {processor.py:161} INFO - Started process (PID=5302) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:08:56.960+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:08:56.961+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:08:56.960+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:08:56.980+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:08:56.976+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:08:56.982+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:08:56.998+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.042 seconds
+[2024-03-05T22:09:27.055+0000] {processor.py:161} INFO - Started process (PID=5358) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:09:27.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:09:27.057+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:09:27.057+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:09:27.074+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:09:27.070+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:09:27.076+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:09:27.091+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.038 seconds
+[2024-03-05T22:09:57.349+0000] {processor.py:161} INFO - Started process (PID=5414) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:09:57.350+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:09:57.352+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:09:57.351+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:09:57.383+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:09:57.375+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:09:57.386+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:09:57.405+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.059 seconds
+[2024-03-05T22:10:28.007+0000] {processor.py:161} INFO - Started process (PID=5470) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:10:28.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:10:28.009+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:10:28.009+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:10:28.031+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:10:28.027+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:10:28.033+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:10:28.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.047 seconds
+[2024-03-05T22:10:58.558+0000] {processor.py:161} INFO - Started process (PID=5526) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:10:58.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:10:58.560+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:10:58.559+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:10:58.577+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:10:58.573+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 5, in <module>
+    from .from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:10:58.579+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:10:58.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.039 seconds
+[2024-03-05T22:11:27.098+0000] {processor.py:161} INFO - Started process (PID=5582) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:27.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:11:27.100+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:11:27.100+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:27.126+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:11:27.122+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 4, in <module>
+    from ..from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:11:27.127+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:27.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.049 seconds
+[2024-03-05T22:11:28.140+0000] {processor.py:161} INFO - Started process (PID=5583) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:28.141+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:11:28.142+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:11:28.142+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:28.171+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:11:28.167+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 4, in <module>
+    from ..from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:11:28.173+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:28.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.053 seconds
+[2024-03-05T22:11:58.876+0000] {processor.py:161} INFO - Started process (PID=5639) to work on /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:58.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/bix_dag.py for tasks to queue
+[2024-03-05T22:11:58.878+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:11:58.878+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:58.895+0000] {logging_mixin.py:188} INFO - [2024-03-05T22:11:58.891+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/bix_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/bix_dag.py", line 4, in <module>
+    from ..from_bard import extract_data_from_api
+ImportError: attempted relative import with no known parent package
+[2024-03-05T22:11:58.896+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/bix_dag.py
+[2024-03-05T22:11:58.912+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/bix_dag.py took 0.038 seconds

@@ -1,0 +1,31 @@
+[2024-03-04T00:53:17.180+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_api.extract_data manual__2024-03-04T00:52:56.050768+00:00 [queued]>
+[2024-03-04T00:53:17.188+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_api.extract_data manual__2024-03-04T00:52:56.050768+00:00 [queued]>
+[2024-03-04T00:53:17.189+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-04T00:53:17.202+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_data> on 2024-03-04 00:52:56.050768+00:00
+[2024-03-04T00:53:17.208+0000] {standard_task_runner.py:60} INFO - Started process 235 to run task
+[2024-03-04T00:53:17.210+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'extract_api', 'extract_data', 'manual__2024-03-04T00:52:56.050768+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/from_bard.py', '--cfg-path', '/tmp/tmpll17v28h']
+[2024-03-04T00:53:17.211+0000] {standard_task_runner.py:88} INFO - Job 24: Subtask extract_data
+[2024-03-04T00:53:17.249+0000] {task_command.py:423} INFO - Running <TaskInstance: extract_api.extract_data manual__2024-03-04T00:52:56.050768+00:00 [running]> on host 474cfb7f4723
+[2024-03-04T00:53:17.310+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_api' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-04T00:52:56.050768+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-04T00:52:56.050768+00:00'
+[2024-03-04T00:53:17.312+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/from_bard.py", line 24, in extract_data_from_api
+    data = response.text()
+           ^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+[2024-03-04T00:53:17.323+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=extract_api, task_id=extract_data, execution_date=20240304T005256, start_date=20240304T005317, end_date=20240304T005317
+[2024-03-04T00:53:17.332+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 24 for task extract_data ('str' object is not callable; 235)
+[2024-03-04T00:53:17.343+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-04T00:53:17.361+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

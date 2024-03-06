@@ -1,5 +1,5 @@
 # Arquivos
-.env
+AIRFLOW-DOCKER/.env
 
 # Diretorios
 log/*

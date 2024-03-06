@@ -1,0 +1,14 @@
+# Arquivos
+AIRFLOW-DOCKER/.env
+
+# Diretorios
+log/*
+
+
+
+# Qualquer coisa
+*.log
+
+
+.env
+.env

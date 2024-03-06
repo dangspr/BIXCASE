@@ -39,7 +39,7 @@ def extract_data_from_api():
     
 
 def python_connector():
-# Replace with your Snowflake connection details
+# Inserir credenciais com variaveis de ambiente
     connection = snowflake.connector.connect(
     user = os.getenv("USER"),
     password = os.getenv("PASSWORD"),
@@ -86,3 +86,4 @@ with DAG(
     #     python_callable=ingest_data_to_snowflake,
     #     op_args=[extract_data_task.output],  # Pass output of previous task
     # )
+    ###

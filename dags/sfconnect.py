@@ -7,11 +7,21 @@ import os
 from snowflake.connector.pandas_tools import write_pandas
 
 
-
 # lista que armazena os ID's usados para cada chamada
 lista_id = ['1','2','3','4','5','6','7','8','9']
 lista_funcionario = []
-df = []
+
+
+# Inserir credenciais com variaveis de ambiente
+connection = snowflake.connector.connect(
+    user = os.getenv("USER"),
+    password = os.getenv("PASSWORD"),
+    account = os.getenv("ACCOUNT"),
+    database = os.getenv("DATABASE"),
+    warehouse = os.getenv("warehouse"),
+    schema = os.getenv("SCHEMA"),
+)
+
 
 
 # Laco criado para percorrer lista e chamar todos os id's necessarios
@@ -21,14 +31,12 @@ def extract_data_from_api():
         req = requests.get(url, timeout=5).text
         funcionario = req
         lista_funcionario.append(funcionario)
-        print(lista_funcionario)
-        print(sfacess_infos)
+                
         
         # Replace with your API call and data processing logic
         # Example using requests library:
         response = req
-        data = lista_funcionario
-        
+                
         continue
     
     # Process and clean data (example using pandas)
@@ -37,31 +45,62 @@ def extract_data_from_api():
         "NOME_FUNCIONARIO": lista_funcionario    
     })
     df = df.dropna()  # Remover linhas com valores nulos
-    nome_funcionario = df
     
-    
-# Inserir credenciais com variaveis de ambiente
-    connection = snowflake.connector.connect(
-    user = os.getenv("USER"),
-    password = os.getenv("PASSWORD"),
-    account = os.getenv("ACCOUNT"),
-    database = os.getenv("DATABASE"),
-    warehouse = os.getenv("warehouse"),
-    schema = os.getenv("SCHEMA"),
-)
-# Criar um cursor para executar comandos SQL
-    cursor = connection.cursor()
-    cursor.execute("USE BIXAPI")
-
-# Preparar a consulta SQL
-    consulta_sql = write_pandas(auto_create_table=True,database=os.getenv("DATABASE"),schema=os.getenv("SCHEMA"), df=df, conn=connection, index=False, table_name="FUNCIONARIO4")
-
-# Executar a consulta SQL
-    cursor.execute(consulta_sql)
-
-# Fechar o cursor e a conexão
-    cursor.close()
-    connection.close()
     return df
 
-extract_data_from_api()
+   
+def validate():          
+    # Criar um cursor para executar comandos SQL
+    cursor = connection.cursor()
+    
+    cursor.execute(f"""
+        SELECT EXISTS (
+        SELECT *
+        FROM FUNCIONARIO
+        WHERE ID_FUNCIONARIO BETWEEN 1 and 9
+        );
+        """) 
+    
+    # Verificação do resultado    
+    existe = cursor.fetchone()[0]
+    cursor.close()
+        
+        
+    if existe:
+        # Fechar o cursor e a conexão
+        print(f"Os ID's já estao na tabela.")
+        return True
+                    
+
+    else:
+        print(f"Os ID's ainda nao foram inseridos e serao adicionados a tabela...")
+        return False
+             
+    
+
+def insert_into_snowflake(df): 
+    cursor = connection.cursor()
+    
+    # Preparar a consulta SQL
+    consulta_sql = write_pandas(auto_create_table=True,database=os.getenv("DATABASE"),schema=os.getenv("SCHEMA"), df=df, conn=connection, index=False, table_name="FUNCIONARIO")
+
+    # Executar a consulta SQL
+    
+    try:
+        cursor.execute(consulta_sql)
+    except:
+           pass
+
+    # Fechar o cursor e a conexão
+    connection.close()
+    connection.close()
+  
+def orquestrate():
+        
+    df = extract_data_from_api()
+
+    if not validate():
+        insert_into_snowflake(df)
+
+
+#orquestrate()

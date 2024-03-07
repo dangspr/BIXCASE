@@ -1,12 +1,9 @@
-import sys
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from snowflake.connector import connect
 from datetime import datetime
 import os
-from ..config import sfacess_infos
-from ..config import extract_data_from_api
-
+from sfconnect import orquestrate
+from config import sfacess_infos
 
 
 with DAG(
@@ -25,14 +22,7 @@ with DAG(
                     "schema": os.getenv("SCHEMA"),
                     },
         task_id="extract_data",
-        python_callable= extract_data_from_api,
+        python_callable= orquestrate,
     )
     
-    
-    # # Ingest data into Snowflake
-    # ingest_data_task = PythonOperator(
-    #     task_id="ingest_data",
-    #     python_callable=ingest_data_to_snowflake,
-    #     op_args=[extract_data_task.output],  # Pass output of previous task
-    # )
-    ###
+   

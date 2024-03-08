@@ -1,0 +1,1 @@
+select 'script' as fazer from {{ ref('stg_funcionario') }} , {{ ref('stg_venda') }}, {{ ref('stg_categoria') }}

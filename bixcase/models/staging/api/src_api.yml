@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: api_data
+    database: BIXAPI
+    schema: RAW_DATA
+    tables:
+      - name: funcionario

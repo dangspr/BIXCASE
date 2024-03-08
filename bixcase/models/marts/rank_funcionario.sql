@@ -1,0 +1,1 @@
+select 'script' as fazer

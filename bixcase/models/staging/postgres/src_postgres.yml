@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: postgres_data
+    database: BIXPOSTGRES
+    schema: RAW_DATA
+    tables:
+      - name: categoria
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+
+          - name: nome_categoria
+            tests:
+              - not_null
+
+      - name: venda
+        columns:
+          - name: id_venda
+            tests:
+              # - unique
+              - not_null
+
+          - name: id_funcionario
+            tests:
+              - not_null
+              
+          - name: id_categoria
+            tests:
+              - not_null

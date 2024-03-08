@@ -39,6 +39,7 @@ Repositório criado para reproduzir o case BIX, em ELT no snowflake.
 - [**Snowflake**]()
 - [**Skyvia**]()
 - [**Airflow**]()
+- [**dbt**]()
 
 <!--License session-->
 ## 📝 License

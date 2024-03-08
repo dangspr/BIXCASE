@@ -1,3 +1,7 @@
+<p align="center">
+   <img src="https://github.com/dangspr/BIXCASE/blob/master/bixcase/Hiring%20Challenge.drawio.png?raw=true" alt="DB" />
+</p>
+
 <!-- Badges -->
 <p align="center">
    <a href="https://www.linkedin.com/in/danilo-gaspar98/">
@@ -29,7 +33,7 @@ Repositório criado para reproduzir o case BIX, em ELT no snowflake.
 - [x]  **Docker**
 
 ## 🚀  Bibliotecas 
-- [x]  **Anaconda**
+- [x]  **Anaconda 24.1.2**
 - [x]  **Pandas**
 - [x]  **Snowflake**
 - [x]  **.ENV**

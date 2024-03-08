@@ -1,6 +1,14 @@
-select * from {{ ref('stg_venda') }}
-  date_trunc(data_venda, 'MONTH') as periodo,
-  sum(venda) over (order by date_trunc(data_venda, 'MONTH')) as venda_acumulada
-from {{ ref('stg_venda') }}
-where data_venda between "2015-01-01" and "2024-01-01"
-order by 1;
+SELECT 
+   DATA_VENDA AS PERIODO, 
+    CAST(SUM(VENDA) 
+      OVER (
+       ORDER BY PERIODO
+       ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    )AS FLOAT) AS VENDA_ACUMULADA
+FROM {{ ref('stg_venda') }} 
+
+
+
+
+
+

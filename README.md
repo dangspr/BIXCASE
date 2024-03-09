@@ -22,7 +22,8 @@
 <!--Sobre o projeto-->
 ## 💻 About Project
 
-Repositório criado para reproduzir o case BIX, em ELT no snowflake.
+Repository created to reproduce the BIX case, in ELT in snowflake.
+Collecting data from different sources, orchestrating and creating a development and production environment in dbt.
 
 
 
@@ -32,7 +33,7 @@ Repositório criado para reproduzir o case BIX, em ELT no snowflake.
 - [x]  **Python**
 - [x]  **Docker**
 
-## 🚀  Bibliotecas 
+## 🚀  Libraries 
 - [x]  **Anaconda 24.1.2**
 - [x]  **Pandas**
 - [x]  **Snowflake**
@@ -45,12 +46,17 @@ Repositório criado para reproduzir o case BIX, em ELT no snowflake.
 - [**Airflow**]()
 - [**dbt**]()
 
+## Improvement points
+- [**Add more steps to your Airflow flow**]()
+- [**Improve the query for insert or update in Snowflake**]()
+- [**Run the entire pipeline in docker**]()
+
 <!--License session-->
 ## 📝 License
 ### This project is licensed [MIT](./LICENSE).
 ---
 
-<h4 align=center>Eng. Dados Junior - Danilo Gaspar <a href="https://idolink.bio/redessociaisdg"> <strong>Contact</strong> :)</a></a></h4>
+<h4 align=center> Data engineer - Danilo Gaspar <a href="https://idolink.bio/redessociaisdg"> <strong>Contact</strong> :)</a></a></h4>
 
 
 

@@ -28,6 +28,13 @@ Collecting data from different sources, orchestrating and creating a development
 
 
 <!--layout-->
+## Tools
+- [**VSCODE**]()
+- [**Snowflake**]()
+- [**Skyvia**]()
+- [**Airflow**]()
+- [**dbt**]()
+
 ## 🚀  Technologies 
 - [x]  **PostgressSQL**
 - [x]  **Python**
@@ -39,17 +46,10 @@ Collecting data from different sources, orchestrating and creating a development
 - [x]  **Snowflake**
 - [x]  **.ENV**
 
-## Tools
-- [**VSCODE**]()
-- [**Snowflake**]()
-- [**Skyvia**]()
-- [**Airflow**]()
-- [**dbt**]()
-
 ## Improvement points
-- [**Add more steps to your Airflow flow**]()
-- [**Improve the query for insert or update in Snowflake**]()
-- [**Run the entire pipeline in docker**]()
+- [x]**Add more steps to your Airflow flow**
+- [x]**Improve the query for insert or update in Snowflake**
+- [x]**Run the entire pipeline in docker**
 
 <!--License session-->
 ## 📝 License

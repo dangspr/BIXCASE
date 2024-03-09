@@ -116,4 +116,4 @@ def orquestrate_google():
       insert_google_into_snowflake(df)    
 
 
-orquestrate_google()
+#orquestrate_google()

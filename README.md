@@ -29,7 +29,7 @@ Collecting data from different sources, orchestrating and creating a development
 
 <!--layout-->
 ## Tools
-- [] **VSCODE**
+- [x] **VSCODE**
 - [x] **Snowflake**
 - [x] **Skyvia**
 - [x] **Airflow**

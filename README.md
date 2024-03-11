@@ -29,18 +29,18 @@ Collecting data from different sources, orchestrating and creating a development
 
 <!--layout-->
 ## Tools
-- [**VSCODE**]()
-- [**Snowflake**]()
-- [**Skyvia**]()
-- [**Airflow**]()
-- [**dbt**]()
+- [] **VSCODE**
+- [x] **Snowflake**
+- [x] **Skyvia**
+- [x] **Airflow**
+- [x] **dbt**
 
-## 🚀  Technologies 
+## Technologies 
 - [x]  **PostgressSQL**
 - [x]  **Python**
 - [x]  **Docker**
 
-## 🚀  Libraries 
+## Libraries 
 - [x]  **Anaconda 24.1.2**
 - [x]  **Pandas**
 - [x]  **Snowflake**
@@ -56,7 +56,7 @@ Collecting data from different sources, orchestrating and creating a development
 ### This project is licensed [MIT](./LICENSE).
 ---
 
-<h4 align=center> Data engineer - Danilo Gaspar <a href="https://idolink.bio/redessociaisdg"> <strong>Contact</strong> :)</a></a></h4>
+<h4 align=center> Data Engineer - Danilo Gaspar <a href="https://idolink.bio/redessociaisdg"> <strong>Contact</strong> :)</a></a></h4>
 
 
 

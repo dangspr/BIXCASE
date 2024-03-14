@@ -8,7 +8,7 @@ from snowflake.connector.pandas_tools import write_pandas
 
 
 # lista que armazena os ID's usados para cada chamada
-lista_id = []
+lista_id = ['1','2','3','4','5','6','7','8','9']
 lista_funcionario = []
 
 # Inserir credenciais com variaveis de ambiente
@@ -17,7 +17,6 @@ connection = snowflake.connector.connect(
     password = os.getenv("PASSWORD"),
     account = os.getenv("ACCOUNT"),
     database = os.getenv("DATABASE"),
-    database_categoria = os.getenv("DATABASE_CATEGORIA"),
     warehouse = os.getenv("warehouse"),
     schema = os.getenv("SCHEMA"),
 )
@@ -29,10 +28,7 @@ def extract_data_from_api():
         req = requests.get(url, timeout=5).text
         funcionario = req
         lista_funcionario.append(funcionario)
-        lista_id.append(id)
         response = req
-        
-        
                 
         continue
     
@@ -101,4 +97,4 @@ def orquestrate():
         
 
 
-#orquestrate()
+orquestrate()

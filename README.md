@@ -47,7 +47,7 @@ Collecting data from different sources, orchestrating and creating a development
 - [x]  **.ENV**
 
 ## Improvement points
-- [x] **Add more steps to your Airflow flow**
+- [x] **Add more steps to your Airflow flow** ✅
 - [x] **Improve the query for insert or update in Snowflake**
 - [x] **Run the entire pipeline in docker**
 

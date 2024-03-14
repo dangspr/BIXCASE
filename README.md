@@ -29,25 +29,25 @@ Collecting data from different sources, orchestrating and creating a development
 
 <!--layout-->
 ## Tools
-- [x] **VSCODE**
-- [x] **Snowflake**
-- [x] **Skyvia**
-- [x] **Airflow**
-- [x] **dbt**
+-  **VSCODE**
+-  **Snowflake**
+-  **Skyvia**
+-  **Airflow**
+-  **dbt**
 
 ## Technologies 
-- [x]  **PostgressSQL**
-- [x]  **Python**
-- [x]  **Docker**
+-   **PostgressSQL**
+-   **Python**
+-   **Docker**
 
 ## Libraries 
-- [x]  **Anaconda 24.1.2**
-- [x]  **Pandas**
-- [x]  **Snowflake**
-- [x]  **.ENV**
+-   **Anaconda 24.1.2**
+-   **Pandas**
+-   **Snowflake**
+-   **.ENV**
 
 ## Improvement points
-- [x] **Add more steps to your Airflow flow** ✅
+- ✅ **Add more steps to your Airflow flow** 
 - [x] **Improve the query for insert or update in Snowflake**
 - [x] **Run the entire pipeline in docker**
 

@@ -10,7 +10,7 @@ cat = []
 nome_cat = []
 id_cat = []
 
-   # Inserir credenciais com variaveis de ambiente
+# Insert credentials with environment variables
 connection = snowflake.connector.connect(
     user = os.getenv("USER"),
     password = os.getenv("PASSWORD"),
@@ -38,7 +38,7 @@ def extract_data_from_google():
      else:
       print('Erro ao baixar o arquivo:', response.status_code)
       
-       # Ler e baixar arquivo parquet
+# Download and Read Parquet file
      
      df = pd.read_parquet('categoria.parquet')
      cat.append(df)
@@ -60,7 +60,7 @@ def extract_data_from_google():
 
 
 def validate_google():          
-    # Criar um cursor para executar comandos SQL
+# Open a cursor to execute SQL commands          
     cursor = connection.cursor()
     
     cursor.execute(f"""
@@ -71,13 +71,12 @@ def validate_google():
         );
         """) 
     
-    # Verificação do resultado    
+# Checking the result   
     existe = cursor.fetchone()[0]
     cursor.close()
         
         
     if existe:
-        # Fechar o cursor e a conexão
         print(f"Os ID's de Categoria já estao na tabela.")
         return True
                     
@@ -88,15 +87,14 @@ def validate_google():
              
 
 def insert_google_into_snowflake(df):  
-   
-
+# Open a cursor to execute SQL commands  
    cursor = connection.cursor()
      
-    # Prepare a query com base nas colunas de merge e update
+# Prepare SQL Query 
    consulta_sql = write_pandas(auto_create_table=True,database=os.getenv("DATABASE_CATEGORIA"),schema=os.getenv("SCHEMA"), df=df, conn=connection, index=False, table_name="CATEGORIA") 
    
 
-    # Executar a consulta SQL
+# Execute SQL Query
     
    try:
       cursor.execute(consulta_sql)
@@ -104,7 +102,7 @@ def insert_google_into_snowflake(df):
            pass
 
    print("Tarefa Concluida")
-    # Fechar o cursor e a conexão
+# Close the cursor and the connection
    connection.close()
    connection.close()   
     

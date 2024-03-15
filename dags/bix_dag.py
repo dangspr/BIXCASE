@@ -5,6 +5,7 @@ import os
 from import_api import orquestrate
 from config import sfacess_infos
 from import_file import orquestrate_google
+from complete_flow import complete_flow
 
 
 with DAG(
@@ -38,5 +39,12 @@ with DAG(
         task_id="extract_data_parquet",
         python_callable= orquestrate_google,
         op_args=[extract_api_task.output],
+    )
+    
+     # Complete flow
+    extract_file_data_task = PythonOperator(
+        task_id="complete_flow",
+        python_callable= complete_flow,
+        op_args=[extract_api_task.output,extract_file_data_task.output],
     )
    

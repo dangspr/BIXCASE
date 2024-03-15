@@ -7,11 +7,11 @@ import os
 from snowflake.connector.pandas_tools import write_pandas
 
 
-# lista que armazena os ID's usados para cada chamada
+# list that stores the IDs used for each call
 lista_id = ['1','2','3','4','5','6','7','8','9']
 lista_funcionario = []
 
-# Inserir credenciais com variaveis de ambiente
+# Insert credentials with environment variables
 connection = snowflake.connector.connect(
     user = os.getenv("USER"),
     password = os.getenv("PASSWORD"),
@@ -21,7 +21,7 @@ connection = snowflake.connector.connect(
     schema = os.getenv("SCHEMA"),
 )
 
-# Laco criado para percorrer lista e chamar todos os id's necessarios
+# Loop created to traverse the list and call all necessary ids
 def extract_data_from_api(): 
     for id in lista_id:    
         url = "https://us-central1-bix-tecnologia-prd.cloudfunctions.net/api_challenge_junior?id={}".format(id)
@@ -32,17 +32,18 @@ def extract_data_from_api():
                 
         continue
     
-    # Processar dados no pandas
+# Process data in pandas
     df = pd.DataFrame({
         "ID_FUNCIONARIO": lista_id,
         "NOME_FUNCIONARIO": lista_funcionario    
     })
-    df = df.dropna()  # Remover linhas com valores nulos
+# Remove rows with null values
+    df = df.dropna()  
     
     return df
   
-def validate():          
-    # Criar um cursor para executar comandos SQL
+def validate():  
+# Open a cursor to execute SQL commands          
     cursor = connection.cursor()
     
     cursor.execute(f"""
@@ -53,37 +54,34 @@ def validate():
         );
         """) 
     
-    # Verificação do resultado    
+# Checking the result    
     existe = cursor.fetchone()[0]
     cursor.close()
         
         
     if existe:
-        # Fechar o cursor e a conexão
         print(f"Os ID's de Funcionario já estao na tabela.")
         return True
                     
-
     else:
         print(f"Os ID's de Funcionario ainda nao foram inseridos e serao adicionados a tabela...")
         return False
-             
-   
+           
 
 def insert_into_snowflake(df): 
     cursor = connection.cursor()
     
-    # Preparar a consulta SQL
+    # Prepare SQL Query
     consulta_sql = write_pandas(auto_create_table=True,database=os.getenv("DATABASE"),schema=os.getenv("SCHEMA"), df=df, conn=connection, index=False, table_name="FUNCIONARIO")
 
-    # Executar a consulta SQL
+    # Execute SQL Query
     
     try:
         cursor.execute(consulta_sql)
     except:
            pass
 
-    # Fechar o cursor e a conexão
+  # Close the cursor and the connection
     connection.close()
     connection.close()
     print("Tarefa Concluida")
@@ -97,4 +95,4 @@ def orquestrate():
         
 
 
-orquestrate()
+#orquestrate()
